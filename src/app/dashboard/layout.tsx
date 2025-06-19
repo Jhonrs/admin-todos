@@ -1,12 +1,5 @@
-import { Sidebar, TopMenu, WidgetItem } from "@/components";
-import {
-  CiBellOn,
-  CiBookmarkCheck,
-  CiChat1,
-  CiLogout,
-  CiMenuBurger,
-  CiSearch,
-} from "react-icons/ci";
+import { Sidebar, TopMenu } from "@/components";
+
 
 export default function DashboardLayout({
   children,
@@ -21,7 +14,7 @@ export default function DashboardLayout({
         <TopMenu />
 
         {/* TODO: Contenido en el Layout.tsx */}
-        <div className="px-6 pt-6">{children}</div>
+        <div className="p-6 m-2 bg-white rounded" >{children}</div>
       </div>
     </>
   );

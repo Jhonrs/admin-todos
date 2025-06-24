@@ -22,7 +22,7 @@ export default function ProfilePage() {
           <span>{session?.user?.email ?? 'No Email'}</span>
           <span>{session?.user?.image ?? 'No Image'}</span>
           <span>{session?.user?.id ?? 'No UUID'}</span>
-          <span className="capitalize">{session?.user?.roles?.join(',') ?? ['no-roles']}</span>
+          <span className="capitalize">{session?.user?.roles?.join(', ') ?? ['no-roles']}</span>
         </div>
      
     </div>
